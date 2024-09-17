@@ -320,6 +320,11 @@ img:not(:hover) {
         /* Espacio entre la imagen y el texto */
         border-radius: 5px;
         /* Aplica un borde redondeado de 5px a las esquinas de la imagen */
+        transition: 300ms;
+    }
+
+    .fotoresenador:hover{
+        transform: scale(1.1);
     }
 
     .textoresena {
