@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// ------------------------------------------ BARRA DE NAVEGACION SUPERIOR
+nav {
+    background: url(https://easycdn.es/4/i/tipos-grano-cafe_7710_cabt.jpg); // Imagen de fondo para la barra de navegación
+    display: flex; // Usa flexbox para organizar el contenido dentro de la barra de navegación
+    justify-content: space-between; // Distribuye el contenido de la barra entre ambos extremos
+    align-items: center; // Alinea verticalmente los elementos
+    border-bottom: 4px solid goldenrod; // Borde inferior dorado
+    padding: 0.5em; // Espaciado interior para la barra
+
+    .iconotostadito {
+        width: 4em; // Ancho de la imagen del logo
+        height: 4em; // Altura de la imagen del logo
+        margin: 5px; // Espaciado alrededor de la imagen
+        background-color: rgba(240, 248, 255, 0.6); // Fondo transparente (aliceblue) para la imagen
+        border-radius: 10px; // Bordes redondeados para la imagen
+        transition: 0.5s; // Transición suave de medio segundo
+
+        &:hover {
+            transform: rotate(30deg); // Al pasar el mouse, la imagen rota 30 grados
+        }
+    }
+
+    ul {
+        display: flex; // Organiza los elementos de la lista en fila
+        align-items: center; // Alinea verticalmente los elementos
+        margin: 0; // Elimina márgenes del `ul`
+
+        li {
+            list-style: none; // Elimina los puntos o números de la lista
+
+            a {
+                font-size: 1.6em; // Tamaño de la fuente para los enlaces
+                font-weight: bold; // Negrita en los enlaces
+                color: black; // Color del texto negro
+                background-color: rgba(240, 248, 255, 0.6); // Fondo transparente (aliceblue) para los enlaces
+                border-radius: 10px; // Bordes redondeados para los enlaces
+                margin: 0 8px; // Espaciado horizontal entre los enlaces
+                padding: 0.25em 0.50em; // Relleno interno para los enlaces
+                transition: 0.5s; // Transición suave para el estilo de los enlaces
+                text-decoration: none; // Elimina el subrayado de los enlaces
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.6); // Fondo negro con 60% de transparencia al pasar el mouse
+                    color: gold; // Cambia el color del texto a dorado al pasar el mouse
+                    transition: 0.75s; // Transición más lenta para el cambio de color y fondo
+                    text-decoration: none; // Mantiene el texto sin subrayado
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------------ HEADER O IMAGEN EMPRESARIAL
+
+header {
+
+    display: flex; // Utiliza flexbox para organizar los elementos del header
+    align-items: center; // Alinea los elementos del header verticalmente al centro
+    justify-content: center; // Centra los elementos del header horizontalmente
+    background-color: #9e6240; // Define un color de fondo marrón para el header
+    border-bottom: 4px solid goldenrod; // Añade un borde inferior dorado de 4px
+    padding: 1em; // Aplica un espacio interior de 1em alrededor del contenido
+
+    div {
+
+        // Estilos para los elementos div dentro del header
+        h1 {
+            // Estilos para el título h1 dentro del div
+            margin: 0; // Elimina el margen del título
+            padding: 0; // Elimina el padding del título
+            color: whitesmoke; // Define el color del texto del título como humo blanco
+            font-size: 4em; // Aumenta el tamaño del texto a 4em
+            font-weight: bold; // Aplica negrita al texto del título
+        }
+
+        p {
+            // Estilos para los párrafos dentro del div
+            color: whitesmoke; // Define el color del texto de los párrafos como humo blanco
+        }
+    }
+
+    .logo1 {
+        // Estilos para el elemento con clase .logo1
+        width: 100px; // Define un ancho fijo de 100px para el logo
+        margin: 0.5em; // Aplica un margen de 0.5em alrededor del logo
+        transition: 0.5s; // Define una transición de medio segundo para cambios en el logo
+
+        &:hover {
+            // Estilos cuando el mouse pasa sobre el logo
+            transition: 0.5s; // Mantiene la transición de 0.5 segundos en hover
+            transform: rotate(30deg); // Rota el logo 30 grados al pasar el mouse
+        }
+    }
+
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// ------------------------------------------ MAIN - ESPACIO DE PRESENTACION DE LA PAGINA
+
+main {
+
+    padding: 1em; // Aplica un relleno de 1em alrededor del contenido del main
+    background: url(https://cafegourmet.es/c/3-category_default/cafe-de-especialidad.jpg); // Establece una imagen de fondo para el main
+
+    p {
+        // Estilos aplicados a los párrafos dentro del main
+        font-style: italic; // Cambia el estilo de la fuente a cursiva
+        font-size: 2em; // Aumenta el tamaño de la fuente a 2em
+        padding: 1em 0.5em; // Aplica un relleno de 1em en la parte superior e inferior, y de 0.5em en los laterales
+        margin: 1em 0.5em; // Establece un margen de 1em en la parte superior e inferior, y de 0.5em en los laterales
+        color: goldenrod; // Cambia el color del texto a dorado
+        text-align: center; // Centra el texto dentro del párrafo
+        background-color: rgba(0, 0, 0, 0.4); // Aplica un color de fondo negro con 40% de transparencia
+        border-radius: 10px; // Redondea las esquinas del fondo del párrafo con un radio de 10px
+        border-left: 4px solid goldenrod; // Añade un borde izquierdo dorado de 4px de grosor
+        border-right: 4px solid goldenrod; // Añade un borde derecho dorado de 4px de grosor
+        transition: 500ms; // Aplica una transición de 500ms a los cambios de estilo del párrafo
+
+        &:hover {
+            // Estilos aplicados cuando se pasa el mouse sobre el párrafo
+            color: whitesmoke; // Cambia el color del texto a blanco humo
+            background-color: rgba(0, 0, 0, 0.6); // Cambia el color de fondo a negro con 60% de transparencia
+        }
+    }
+
+}
+
+// ------------------------------------------ ESTILOS PARA TITULO DE UNA SECCION
+
+.titulodeseccion {
+    margin: 0; // Elimina el margen externo del elemento
+    color: #9e6240; // Establece el color del texto a un tono marrón (#9e6240)
+    background-color: black; // Establece el fondo del elemento en color negro
+    font-size: 4em; // Aumenta el tamaño de la fuente a 4em
+    font-weight: bold; // Aplica negrita al texto
+    text-align: center; // Centra el texto horizontalmente
+    padding: 0.25em; // Aplica un relleno interno de 0.25em alrededor del contenido
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.4), // Aplica una sombra al texto con un resplandor blanco extendido
+        0 0 40px rgba(255, 255, 255, 0.4), // Aplica un segundo resplandor blanco de mayor tamaño
+        0 0 100px rgba(255, 255, 255, 0.4); // Aplica un resplandor máximo blanco extendido aún más
+    border-top: 4px solid goldenrod; // Añade un borde superior de 4px de grosor en color dorado
+}
+
+
+// ------------------------------------------ SECCION DE MENU DE MOSAICOS
+.cajatresmenu {
+    display: flex; // Utiliza Flexbox para organizar el contenido de manera flexible
+    background: url(https://cafesenork.com/cdn/shop/articles/cafe_especilidad.jpg?v=1626202348) top no-repeat; // Establece una imagen de fondo que no se repite y se alinea en la parte superior
+    background-size: cover; // Asegura que la imagen de fondo cubra todo el contenedor
+    justify-content: space-evenly; // Distribuye el espacio entre los elementos hijos de manera uniforme
+}
+
+.menumosaico {
+    display: flex; // Utiliza Flexbox para organizar el contenido de manera flexible
+    justify-content: space-evenly; // Distribuye el espacio entre los elementos hijos de manera uniforme
+
+    .mosaico {
+        width: 25%; // Establece el ancho de la imagen al 25% del contenedor padre
+        margin: 1em; // Añade un margen de 1em alrededor de la imagen
+        border-radius: 10px; // Aplica un borde redondeado de 10px a las esquinas de la imagen
+        border-left: 6px solid gold; // Añade un borde izquierdo sólido de 6px en color dorado
+        border-right: 6px solid gold; // Añade un borde derecho sólido de 6px en color dorado
+        transition: 0.3s; // Aplica una transición suave de 0.3 segundos para los cambios de estado
+    }
+}
+
+
+
+img:hover {
+    transform: scale(1); // Escala la imagen al tamaño original al pasar el cursor sobre ella
+    opacity: 1; // Establece la opacidad de la imagen al 100% al pasar el cursor sobre ella
+    filter: brightness(100%); // Ajusta el brillo de la imagen al 100% (sin cambios) al pasar el cursor sobre ella
+}
+
+img:not(:hover) {
+    transform: scale(0.9); // Reduce el tamaño de la imagen al 90% cuando el cursor no está sobre ella
+    filter: brightness(60%); // Reduce el brillo de la imagen al 60% cuando el cursor no está sobre ella
+}
+
+
+// ------------------------------------------ SECCION DE MAS OPCIONES GASTRONOMICAS
+
+.masgrid-container {
+    background: url(https://png.pngtree.com/thumb_back/fw800/background/20240716/pngtree-three-brown-jute-sack-bags-of-coffee-beans-on-wooden-table-image_15941365.jpg);
+    /* Establece una imagen de fondo para el contenedor */
+    display: grid;
+    /* Utiliza el diseño de cuadrícula (grid) para organizar los elementos internos */
+    justify-content: center;
+    /* Centra el contenido dentro del contenedor de cuadrícula horizontalmente */
+    padding: 3em;
+    /* Añade un espacio interior de 3em alrededor del contenido del contenedor */
+    grid-template-columns: repeat(3, 1fr);
+    /* Crea 3 columnas de igual tamaño usando fracciones del espacio disponible */
+    grid-template-rows: repeat(2, auto);
+    /* Crea 2 filas con altura automática que se ajustan al contenido */
+    gap: 10px;
+    /* Establece un espacio de 10px entre los elementos de la cuadrícula */
+
+    transition: all 0.3s ease;
+    /* Aplica una transición suave de 0.3 segundos a todos los cambios de propiedad */
+
+    >div {
+        /* Selecciona los elementos directos hijos del contenedor .masgrid-container */
+        width: 100%;
+        /* Establece el ancho de cada elemento hijo al 100% del ancho de su contenedor de cuadrícula */
+        color: whitesmoke;
+        /* Establece el color del texto de los elementos hijos a un tono blanco humo */
+        font-size: 1.5em;
+        /* Establece el tamaño de la fuente de los elementos hijos a 1.5 veces el tamaño de fuente base */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Establece un color de fondo negro con un 40% de transparencia */
+        padding: 20px;
+        /* Añade un espacio interior de 20px alrededor del contenido de los elementos hijos */
+        text-align: center;
+        /* Centra el texto dentro de los elementos hijos */
+        border-radius: 10px;
+        /* Aplica un borde redondeado de 10px a las esquinas de los elementos hijos */
+        border-left: 6px solid goldenrod;
+        /* Añade un borde izquierdo sólido de 6px en color dorado */
+        border-right: 6px solid goldenrod;
+        /* Añade un borde derecho sólido de 6px en color dorado */
+        transition: all 0.3s ease;
+        /* Aplica una transición suave de 0.3 segundos a todos los cambios de propiedad en los elementos hijos */
+
+        &:not(:hover) {
+            /* Selecciona los elementos hijos cuando el cursor no está sobre ellos */
+            color: gray;
+            /* Cambia el color del texto a gris */
+            opacity: 0.7;
+            /* Establece la opacidad de los elementos hijos al 70%, oscureciéndolos */
+            transform: scale(0.9);
+            /* Reduce el tamaño de los elementos hijos al 90% de su tamaño original */
+            filter: blur(2px);
+            /* Aplica un desenfoque de 2 píxeles a los elementos hijos */
+        }
+    }
+}
+
+// ------------------------------------------ SECCION DE RESENÑAS
+
+.resenas {
+
+    padding: 1em;
+    /* Añade un espacio interior de 1em alrededor del contenido del contenedor .resenas */
+    background: url("https://www.viapais.com.ar/resizer/v2/OPEWDTI4YJC5NEDMW2KDPTB72Y.png?quality=75&smart=true&auth=a70ae0678a1a8919b591de4ec18a7cf73573061d607e44e2e3371754f8123655&width=980&height=640");
+    /* Establece una imagen de fondo para el contenedor .resenas */
+
+    p {
+        font-style: italic;
+        /* Establece el estilo de fuente en cursiva para los párrafos dentro de .resenas */
+        font-size: 2em;
+        /* Establece el tamaño de fuente a 2 veces el tamaño de fuente base */
+        padding: 1em 0.5em;
+        /* Añade un espacio interior de 1em en la parte superior e inferior y 0.5em a los lados del párrafo */
+        margin: 1em 0.5em;
+        /* Añade un margen de 1em en la parte superior e inferior y 0.5em a los lados del párrafo */
+        color: goldenrod;
+        /* Establece el color del texto en dorado */
+        text-align: center;
+        /* Centra el texto dentro del párrafo */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Establece un color de fondo negro con un 40% de transparencia */
+        border-radius: 10px;
+        /* Aplica un borde redondeado de 10px a las esquinas del párrafo */
+        border-left: 4px solid goldenrod;
+        /* Añade un borde izquierdo sólido de 4px en color dorado */
+        border-right: 4px solid goldenrod;
+        /* Añade un borde derecho sólido de 4px en color dorado */
+        transition: 500ms;
+        /* Aplica una transición suave de 500ms a todos los cambios de propiedad */
+
+        &:hover {
+            color: whitesmoke;
+            /* Cambia el color del texto a blanco humo cuando el cursor está sobre el párrafo */
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Cambia el color de fondo a negro con un 60% de transparencia cuando el cursor está sobre el párrafo */
+        }
+    }
+
+    .gridresenas {
+        display: grid;
+        /* Utiliza el diseño de cuadrícula (grid) para organizar los elementos internos */
+        grid-template-columns: repeat(2, 1fr);
+        /* Crea 2 columnas de igual tamaño usando fracciones del espacio disponible */
+        /* Crea 2 columnas */
+        gap: 20px;
+        /* Establece un espacio de 20px entre las celdas de la cuadrícula */
+        /* Espacio entre las celdas */
+    }
+
+    .cajaresena {
+        display: flex;
+        /* Utiliza el diseño flex para alinear la imagen y el texto en una fila */
+        align-items: start;
+        /* Alinea los elementos hijos al principio del contenedor (parte superior) */
+        padding: 10px;
+        /* Añade un espacio interior de 10px alrededor del contenido del contenedor .cajaresena */
+        background-color: rgba(0, 0, 0, 0.6);
+        /* Establece un color de fondo negro con un 60% de transparencia */
+        border-radius: 10px;
+        /* Aplica un borde redondeado de 10px a las esquinas del contenedor .cajaresena */
+    }
+
+    .fotoresenador {
+        width: 100px;
+        /* Establece el ancho de la imagen a 100px */
+        height: 100px;
+        /* Establece la altura de la imagen a 100px */
+        margin-right: 20px;
+        /* Añade un margen de 20px a la derecha de la imagen para separar la imagen del texto */
+        /* Espacio entre la imagen y el texto */
+        border-radius: 5px;
+        /* Aplica un borde redondeado de 5px a las esquinas de la imagen */
+    }
+
+    .textoresena {
+        display: flex;
+        /* Utiliza el diseño flex para organizar los elementos internos del texto en una fila */
+        flex-direction: column;
+        /* Organiza los elementos internos en una columna */
+        /* Organiza el texto en columna */
+    }
+
+    .nombreresenador {
+        margin: 0;
+        /* Elimina el margen del elemento .nombreresenador */
+        padding: 0;
+        /* Elimina el espacio interior del elemento .nombreresenador */
+        font-size: 1.5em;
+        /* Establece el tamaño de fuente a 1.5 veces el tamaño de fuente base */
+        color: whitesmoke;
+        /* Establece el color del texto en blanco humo */
+        font-weight: 600;
+        /* Establece el peso de la fuente a 600 (negrita) */
+    }
+
+    .textoresena {
+        color: whitesmoke;
+        /* Establece el color del texto en blanco humo */
+        margin: 5px 0 0;
+        /* Añade un margen de 5px en la parte superior y 0 a los lados y la parte inferior del elemento .textoresena */
+        font-size: 1em;
+        /* Establece el tamaño de fuente a tamaño de fuente base */
+    }
+}
+
+// ------------------------------------------ FOOTER
+
+footer {
+    background-color: #333;
+    /* Fondo gris oscuro para el footer */
+    color: whitesmoke;
+    /* Color del texto en blanco humo */
+    padding: 2em 0;
+    /* Espaciado de 2em en la parte superior e inferior del footer */
+    font-family: 'Montserrat', sans-serif;
+    /* Fuente Montserrat para el texto del footer */
+    border-top: 4px solid goldenrod;
+    /* Borde superior dorado de 4px en el footer */
+
+    .footer-container {
+        display: flex;
+        /* Utiliza el diseño flex para organizar las secciones dentro del footer */
+        justify-content: space-around;
+        /* Distribuye las secciones del footer uniformemente a lo largo del contenedor */
+        max-width: 1200px;
+        /* Establece el ancho máximo del contenedor a 1200px */
+        margin: 0 auto;
+        /* Centra el contenedor horizontalmente */
+        padding: 0 1em;
+        /* Añade un padding de 1em a los lados del contenedor */
+
+        .footer-section {
+            width: 30%;
+            /* Cada sección ocupa el 30% del ancho del contenedor del footer */
+
+            h2 {
+                font-size: 1.5em;
+                /* Tamaño de fuente de 1.5em para los títulos dentro de las secciones del footer */
+                margin-bottom: 1em;
+                /* Margen inferior de 1em debajo del título */
+                border-bottom: 2px solid goldenrod;
+                /* Línea dorada de 2px debajo del título */
+                padding-bottom: 0.5em;
+                /* Padding inferior de 0.5em para los títulos */
+            }
+
+            p,
+            ul {
+                font-size: 1em;
+                /* Tamaño de fuente de 1em para los párrafos y listas dentro de las secciones */
+            }
+
+            ul {
+                list-style: none;
+                /* Elimina los estilos de lista predeterminados, como los puntos o números */
+                padding: 0;
+                /* Elimina el padding en la lista */
+
+                li {
+                    margin: 0.5em 0;
+                    /* Margen superior e inferior de 0.5em para cada ítem de la lista */
+
+                    a {
+                        color: #f1c40f;
+                        /* Color amarillo dorado para los enlaces en la lista */
+                        text-decoration: none;
+                        /* Sin subrayado en los enlaces */
+
+                        &:hover {
+                            text-decoration: underline;
+                            /* Subraya el enlace cuando el cursor está sobre él */
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .social-media {
+        display: flex;
+        /* Utiliza el diseño flex para organizar los íconos de redes sociales en fila */
+        gap: 0.5em;
+        /* Espacio de 0.5em entre los íconos de redes sociales */
+
+        a {
+            img {
+                width: 2em;
+                /* Ancho de 2em para los íconos de redes sociales */
+                height: 2em;
+                /* Altura de 2em para los íconos de redes sociales */
+                transition: transform 0.3s;
+                /* Transición suave de 0.3s para la transformación de los íconos */
+                border-radius: 6px;
+                /* Bordes redondeados de 6px para los íconos de redes sociales */
+
+                &:hover {
+                    transform: scale(1.2);
+                    /* Aumenta el tamaño del ícono al 120% cuando el cursor está sobre él */
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        /* Centra el texto en la parte inferior del footer */
+        margin-top: 1em;
+        /* Margen superior de 1em en la parte inferior del footer */
+        font-size: 0.9em;
+        /* Tamaño de fuente reducido a 0.9em para el texto en la parte inferior */
+    }
+}
