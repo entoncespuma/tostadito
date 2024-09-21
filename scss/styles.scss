@@ -89,11 +89,13 @@ header {
         width: 100px; // Define un ancho fijo de 100px para el logo
         margin: 0.5em; // Aplica un margen de 0.5em alrededor del logo
         transition: 0.5s; // Define una transición de medio segundo para cambios en el logo
+        
 
         &:hover {
             // Estilos cuando el mouse pasa sobre el logo
             transition: 0.5s; // Mantiene la transición de 0.5 segundos en hover
             transform: rotate(30deg); // Rota el logo 30 grados al pasar el mouse
+            box-shadow: none;
         }
     }
 
@@ -170,6 +172,7 @@ main {
         border-left: 6px solid gold; // Añade un borde izquierdo sólido de 6px en color dorado
         border-right: 6px solid gold; // Añade un borde derecho sólido de 6px en color dorado
         transition: 0.3s; // Aplica una transición suave de 0.3 segundos para los cambios de estado
+        
     }
 }
 
@@ -179,6 +182,7 @@ img:hover {
     transform: scale(1); // Escala la imagen al tamaño original al pasar el cursor sobre ella
     opacity: 1; // Establece la opacidad de la imagen al 100% al pasar el cursor sobre ella
     filter: brightness(100%); // Ajusta el brillo de la imagen al 100% (sin cambios) al pasar el cursor sobre ella
+    box-shadow: 10px 10px 20px #000; /* Sombra con desplazamiento, difuminado y color */
 }
 
 img:not(:hover) {
@@ -230,6 +234,7 @@ img:not(:hover) {
         /* Añade un borde derecho sólido de 6px en color dorado */
         transition: all 0.3s ease;
         /* Aplica una transición suave de 0.3 segundos a todos los cambios de propiedad en los elementos hijos */
+        box-shadow: 10px 10px 20px #000; /* Sombra con desplazamiento, difuminado y color */
 
         &:not(:hover) {
             /* Selecciona los elementos hijos cuando el cursor no está sobre ellos */
@@ -346,6 +351,8 @@ img:not(:hover) {
         /* Establece el color del texto en blanco humo */
         font-weight: 600;
         /* Establece el peso de la fuente a 600 (negrita) */
+        border-bottom: 1px solid whitesmoke;
+        /* Establece un borde inferior de 1px en blanco humo */
     }
 
     .textoresena {

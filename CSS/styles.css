@@ -75,6 +75,7 @@ header .logo1 {
 header .logo1:hover {
   transition: 0.5s;
   transform: rotate(30deg);
+  box-shadow: none;
 }
 
 body {
@@ -139,6 +140,7 @@ img:hover {
   transform: scale(1);
   opacity: 1;
   filter: brightness(100%);
+  box-shadow: 10px 10px 20px #000; /* Sombra con desplazamiento, difuminado y color */
 }
 
 img:not(:hover) {
@@ -186,6 +188,7 @@ img:not(:hover) {
   /* Añade un borde derecho sólido de 6px en color dorado */
   transition: all 0.3s ease;
   /* Aplica una transición suave de 0.3 segundos a todos los cambios de propiedad en los elementos hijos */
+  box-shadow: 10px 10px 20px #000; /* Sombra con desplazamiento, difuminado y color */
 }
 .masgrid-container > div:not(:hover) {
   /* Selecciona los elementos hijos cuando el cursor no está sobre ellos */
@@ -290,6 +293,8 @@ img:not(:hover) {
   /* Establece el color del texto en blanco humo */
   font-weight: 600;
   /* Establece el peso de la fuente a 600 (negrita) */
+  border-bottom: 1px solid whitesmoke;
+  /* Establece un borde inferior de 1px en blanco humo */
 }
 .resenas .textoresena {
   color: whitesmoke;
